@@ -1,24 +1,37 @@
 import React from 'react'
-import logo from './logo.svg'
-import './App.css'
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
+
+import './assets/main.css'
+
+import NavBar from './components/NavBar'
 
 const App: React.FunctionComponent = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="grid grid-cols-12 grid-rows-6">
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/experience">
+            experience
+          </Route>
+          <Route exact path="/skills">
+            skills
+          </Route>
+          <Route exact path="/projects">
+            projects
+          </Route>
+          <Route exact path="/education">
+            education
+          </Route>
+          <Route exact path="/certifications">
+            certifications
+          </Route>
+          <Route exact path="/blog">
+            blog
+          </Route>
+          <Route>landing</Route>
+        </Switch>
+      </Router>
     </div>
   )
 }
