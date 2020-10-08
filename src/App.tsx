@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 import './assets/main.css'
 
 import NavBar from './components/NavBar'
+import Blog from './components/Blog'
 
 const App: React.FunctionComponent = () => {
   return (
@@ -27,7 +28,7 @@ const App: React.FunctionComponent = () => {
             certifications
           </Route>
           <Route exact path="/blog">
-            blog
+            <Blog />
           </Route>
           <Route>landing</Route>
         </Switch>
