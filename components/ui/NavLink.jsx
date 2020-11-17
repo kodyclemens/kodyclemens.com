@@ -1,11 +1,10 @@
 const NavLink = ({ navItemTitle, active, onClick }) => {
-	const textOpacity =
-		active === navItemTitle.toLowerCase() ? '' : 'text-opacity-50';
+	const textOpacity = active === navItemTitle.toLowerCase() ? 'font-bold' : '';
 
 	return (
 		<>
 			<p
-				className={`${textOpacity} text-white cursor-pointer font-sans block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4`}
+				className={`${textOpacity} company-colors cursor-pointer font-sans block mt-4 lg:inline-block lg:mt-0 mr-4`}
 				onClick={onClick}
 			>
 				{navItemTitle}

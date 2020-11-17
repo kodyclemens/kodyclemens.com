@@ -17,8 +17,8 @@ const Nav = ({ activeTab }) => {
 	};
 
 	return (
-		<nav className="col-span-12 flex items-center justify-between flex-wrap bg-black bg-opacity-90 p-2">
-			<div className="flex items-center flex-shrink-0 text-white lg:mr-24 lg:ml-48">
+		<nav className="col-span-12 flex items-center justify-between flex-wrap company-colors bg-opacity-90 p-2">
+			<div className="flex items-center flex-shrink-0 lg:mr-24 lg:ml-48">
 				<Link href="/">
 					<a>
 						<span className="font-sans text-2xl tracking-tight">
@@ -29,7 +29,7 @@ const Nav = ({ activeTab }) => {
 			</div>
 			<div className="block lg:hidden">
 				<button
-					className="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white"
+					className="flex items-center px-3 py-2 border rounded border-white"
 					onClick={handleMenuClick}
 				>
 					<svg
