@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport Page from '../components/Page';\nexport default function Projects() {\n  return /*#__PURE__*/_jsx(Page, {\n    activeTab: \"projects\",\n    children: /*#__PURE__*/_jsx(\"h1\", {\n      children: \"Projects\"\n    })\n  });\n}","map":null,"metadata":{},"sourceType":"module"}
