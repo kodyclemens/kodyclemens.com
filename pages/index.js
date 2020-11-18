@@ -1,19 +1,17 @@
-import Image from 'next/image';
-
 import Page from '../components/Page';
 
 export default function Home({ children, activeTab }) {
 	return (
 		<Page siteTitle="Hi, I'm **Kody**">
 			<section className="headingMd col-span-12 flex flex-col items-center">
-				<Image
-					src="/images/profile.png"
+				<img
+					src={require('../public/images/profile.png')}
 					className="rounded-full"
 					alt="Kody's profile picture"
-					width="256px"
-					height="256px"
-					layout="intrinsic"
-					priority={true}
+					// width="256px"
+					// height="256px"
+					// layout="intrinsic"
+					// priority={true}
 				/>
 				<p className="mt-8">
 					Hi, I'm{' '}
@@ -44,13 +42,13 @@ export default function Home({ children, activeTab }) {
 			<hr className="w-full mt-8 company-colors col-start-5 col-end-9" />
 			<section className="headingMd col-span-12 flex flex-col mt-4">
 				<p className="flex justify-center items-center mb-2">
-					<Image
-						src="/images/email.png"
+					<img
+						src={require('../public/images/email.png')}
 						alt="Email"
-						width="48px"
-						height="48px"
-						layout="intrinsic"
-						priority={true}
+						// width="48px"
+						// height="48px"
+						// layout="intrinsic"
+						// priority={true}
 					/>
 					<span className="pl-4 text-gray-600 text-sm">
 						kody (at) kodyclemens.com
@@ -63,12 +61,13 @@ export default function Home({ children, activeTab }) {
 						rel="noopener noreferrer"
 						alt="GitHub"
 					>
-						<Image
-							src="/images/github.png"
-							width="48px"
-							height="48px"
-							layout="intrinsic"
-							priority={true}
+						<img
+							src={require('../public/images/github.png')}
+							alt="GitHub"
+							// width="48px"
+							// height="48px"
+							// layout="intrinsic"
+							// priority={true}
 						/>
 					</a>
 					<a
@@ -77,12 +76,13 @@ export default function Home({ children, activeTab }) {
 						rel="noopener noreferrer"
 						alt="LinkedIn"
 					>
-						<Image
-							src="/images/linkedin.png"
-							width="48px"
-							height="48px"
-							layout="intrinsic"
-							priority={true}
+						<img
+							src={require('../public/images/linkedin.png')}
+							alt="LinkedIn"
+							// width="48px"
+							// height="48px"
+							// layout="intrinsic"
+							// priority={true}
 						/>
 					</a>
 					<a
@@ -91,13 +91,13 @@ export default function Home({ children, activeTab }) {
 						rel="noopener noreferrer"
 						alt="Twitter"
 					>
-						<Image
-							src="/images/twitter.png"
+						<img
+							src={require('../public/images/twitter.png')}
 							alt="Twitter"
-							width="48px"
-							height="48px"
-							layout="intrinsic"
-							priority={true}
+							// width="48px"
+							// height="48px"
+							// layout="intrinsic"
+							// priority={true}
 						/>
 					</a>
 				</p>
