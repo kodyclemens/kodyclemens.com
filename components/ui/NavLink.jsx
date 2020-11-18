@@ -1,11 +1,20 @@
-const NavLink = ({ navItemTitle, active, onClick }) => {
-	const textOpacity = active === navItemTitle.toLowerCase() ? 'font-bold' : '';
+const NavLink = ({ navItemTitle, active, onClick, disabled }) => {
+	let dynamicClass = '';
+
+	if (active === navItemTitle.toLowerCase()) {
+		dynamicClass = 'font-bold';
+	}
+
+	if (disabled) {
+		dynamicClass = 'disabled';
+	}
 
 	return (
 		<>
 			<p
-				className={`${textOpacity} company-colors cursor-pointer font-sans block mt-4 lg:inline-block lg:mt-0 mr-4`}
-				onClick={onClick}
+				className={`${dynamicClass} company-colors cursor-pointer block mt-4 lg:inline-block lg:mt-0 mr-4`}
+				onClick={disabled ? null : onClick}
+				title={disabled ? 'Currently disabled' : navItemTitle}
 			>
 				{navItemTitle}
 			</p>

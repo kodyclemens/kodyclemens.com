@@ -41,6 +41,67 @@ export default function Home({ children, activeTab }) {
 					.
 				</p>
 			</section>
+			<hr className="w-full mt-8 company-colors col-start-5 col-end-9" />
+			<section className="headingMd col-span-12 flex flex-col mt-4">
+				<p className="flex justify-center items-center mb-2">
+					<Image
+						src="/images/email.png"
+						alt="Email"
+						width="48px"
+						height="48px"
+						layout="intrinsic"
+						priority={true}
+					/>
+					<span className="pl-4 text-gray-600 text-sm">
+						kody (at) kodyclemens.com
+					</span>
+				</p>
+				<p className="w-full flex justify-center">
+					<a
+						href="https://github.com/kodyclemens"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="GitHub"
+					>
+						<Image
+							src="/images/github.png"
+							width="48px"
+							height="48px"
+							layout="intrinsic"
+							priority={true}
+						/>
+					</a>
+					<a
+						href="https://www.linkedin.com/in/kody-clemens/"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="LinkedIn"
+					>
+						<Image
+							src="/images/linkedin.png"
+							width="48px"
+							height="48px"
+							layout="intrinsic"
+							priority={true}
+						/>
+					</a>
+					<a
+						href="https://twitter.com/kody_clemens"
+						target="_blank"
+						rel="noopener noreferrer"
+						alt="Twitter"
+					>
+						<Image
+							src="/images/twitter.png"
+							alt="Twitter"
+							width="48px"
+							height="48px"
+							layout="intrinsic"
+							priority={true}
+						/>
+					</a>
+				</p>
+			</section>
 		</Page>
 	);
 }

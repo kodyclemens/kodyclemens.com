@@ -21,9 +21,7 @@ const Nav = ({ activeTab }) => {
 			<div className="flex items-center flex-shrink-0 lg:mr-24 lg:ml-48">
 				<Link href="/">
 					<a>
-						<span className="font-sans text-2xl tracking-tight">
-							Kody Clemens
-						</span>
+						<span className="text-2xl tracking-tight">Kody Clemens</span>
 					</a>
 				</Link>
 			</div>
@@ -59,6 +57,7 @@ const Nav = ({ activeTab }) => {
 						navItemTitle="Experience"
 						active={activeTab}
 						onClick={() => handleNavigation('experience')}
+						disabled
 					/>
 					<NavLink
 						key="nav2"
@@ -71,24 +70,28 @@ const Nav = ({ activeTab }) => {
 						navItemTitle="Projects"
 						active={activeTab}
 						onClick={() => handleNavigation('projects')}
+						disabled
 					/>
 					<NavLink
 						key="nav4"
 						navItemTitle="Education"
 						active={activeTab}
 						onClick={() => handleNavigation('education')}
+						disabled
 					/>
 					<NavLink
 						key="nav5"
 						navItemTitle="Certifications"
 						active={activeTab}
 						onClick={() => handleNavigation('certifications')}
+						disabled
 					/>
 					<NavLink
 						key="nav6"
 						navItemTitle="Blog"
 						active={activeTab}
 						onClick={() => handleNavigation('blog')}
+						disabled
 					/>
 				</div>
 			</div>

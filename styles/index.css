@@ -11,7 +11,7 @@ html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+	font-family: B612, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
 		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 	line-height: 1.6;
 	font-size: 18px;
@@ -29,6 +29,14 @@ body {
 .company-colors {
 	background-color: rgb(212, 255, 38);
 	color: rgb(17, 73, 84);
+}
+
+.disabled {
+	color: rgba(17, 73, 84, 0.5);
+}
+
+.light-text {
+	color: #d1d1d1;
 }
 
 /* Start purging... */
