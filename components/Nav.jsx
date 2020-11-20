@@ -57,7 +57,6 @@ const Nav = ({ activeTab }) => {
 						navItemTitle="Experience"
 						active={activeTab}
 						onClick={() => handleNavigation('experience')}
-						disabled
 					/>
 					<NavLink
 						key="nav2"

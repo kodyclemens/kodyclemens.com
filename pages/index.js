@@ -5,13 +5,9 @@ export default function Home({ children, activeTab }) {
 		<Page siteTitle="Hi, I'm **Kody**">
 			<section className="headingMd col-span-12 flex flex-col items-center">
 				<img
-					src={require('../public/images/profile.png')}
+					src={require('../public/images/profile.jpeg')}
 					className="rounded-full"
 					alt="Kody's profile picture"
-					// width="256px"
-					// height="256px"
-					// layout="intrinsic"
-					// priority={true}
 				/>
 				<p className="mt-8">
 					Hi, I'm{' '}
