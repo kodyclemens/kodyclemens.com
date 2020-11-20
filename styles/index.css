@@ -7,6 +7,20 @@
 /* Stop purging. */
 
 /* Write your own custom component styles here */
+@font-face {
+	font-family: B612;
+	src: url(/fonts/B612-Regular.ttf) format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: B612;
+	src: url(/fonts/B612-Bold.ttf) format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 html,
 body {
 	padding: 0;
